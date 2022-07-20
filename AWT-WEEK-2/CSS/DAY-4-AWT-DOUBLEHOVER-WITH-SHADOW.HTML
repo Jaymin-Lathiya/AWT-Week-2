@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOUBLE-HOVER</title>
+    <style>
+
+        h1{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 80px;
+        }
+        .container{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+            display: flex;
+            height: 350px;
+            background-color: lightcyan;
+        }
+
+        img{
+            width: 170px;
+            height: 150px;
+        }
+
+        span{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        
+        .first ,.second,.third,.four{
+            border: 3px solid black;
+            margin: 40px;
+            transition: 2s;
+            height: 220px;
+            width: 170px;
+            
+        }
+
+        .first:hover{
+            transform: scale(1.2);
+            transition: 2s;
+            box-shadow:0px 0px 40px blue;
+            border: 10px solid red;
+        }
+
+        .first:hover span{
+            font-size: 30px;
+            transition: 3s;
+            transform: scale(1.3);
+            background-clip: content-box;
+            background: yellow;
+            border: 10px dotted green;
+            text-shadow:8px 8px 8px red;
+        }
+
+        .second:hover{
+            transform: scale(1.2);
+            transition: 2s;
+            box-shadow:0px 0px 50px red;
+            border: 10px solid green;
+            
+
+        }
+
+        .second:hover span{
+            font-size: 30px;
+            transition: 3s;
+            transform: scale(1.3);
+            background-clip: content-box;
+            background: yellow;
+            background: yellow;
+            border: 10px dotted green;
+            text-shadow:8px 8px 8px red;
+        }
+
+        .third:hover{
+            transform: scale(1.2);
+            transition: 2s;
+            box-shadow:0px 0px 40px blue;
+            border: 10px solid red;
+        }
+
+        .third:hover span{
+            font-size: 30px;
+            transition: 3s;
+            transform: scale(1.3);
+            background-clip: content-box;
+            background: yellow;
+            border: 10px dotted GREEN;
+            text-shadow:8px 8px 8px red;
+        }
+
+        .four:hover{
+            transform: scale(1.2);
+            transition: 2s;
+            box-shadow:0px 0px 50px red;
+            border: 10px solid green;
+        }
+
+        .four:hover span{
+            font-size: 30px;
+            transition: 3s;
+            transform: scale(1.3);
+            background-clip: content-box;
+            background: yellow;
+            border: 7px dotted green;
+            text-shadow:8px 8px 8px red;
+        }
+
+        /* header */
+        #navbar{
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+    </style>
+</head>
+<body>
+    
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+        <nav id="navbar">
+          
+            <ul>
+                <li><a href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+                <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+                <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+                <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+                <li><a class="active" href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+                <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+                <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+                <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+                <li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+                <li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+                
+            </ul>
+        </nav><br/>
+    
+    <!-- /* ============================<NAVBAR-END>========================================= */ -->
+    
+    <h1>DOUBLE-HOVER</h1>
+    <div class="container">
+
+        <div class="first">
+            <img src="IMG2/nature.jpg" alt=""><br/><br/>
+            <span>NATURE</span><br/><br/>
+        </div> 
+        
+        <div class="second">
+            <img src="IMG2/ganesh.jpg" alt=""><br><br>
+            <span>GANESH</span><br/><br/>
+        </div> 
+        
+        <div class="third">
+            <img src="IMG2/watterfall.jpg" alt=""><br/><br/>
+            <span>WATER</span><br/><br/>
+        </div>
+        
+        <div class="four">
+            <img src="IMG2/shiv.jpg" alt=""><br/><br/>
+            <span>SHIV</span><br/><br/>
+        </div>
+
+    </div>
+    
+</body>
+</html>

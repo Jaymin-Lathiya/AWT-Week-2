@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS-BACKGROUNG-VIDEO</title>
+	<style>
+		
+				.bgvideo 
+				{
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow:hidden;
+					z-index:-1;
+					background-size:cover;
+				}
+
+				.fullbgvideo{
+					position:fixed;
+					width: auto;
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				} 
+								
+				h2{
+					color: yellow;
+					padding: 20px;
+					font-weight: bolder;
+					font-size: 50px;					
+				}
+
+				h1{
+					color: yellow;
+					background-color: red;
+					display: inline;
+					font-weight: 30px;
+					text-align: center;
+					font-weight: bolder;
+					justify-content: center;
+				}
+
+
+				/* header */
+				#navbar{
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: red;
+    transition: .5s;
+}
+		
+
+
+
+
+	</style>
+</head>
+<body>
+	
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+        <nav id="navbar">
+          
+            <ul>
+                <li><a  href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+                <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+                <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+                <li><a class="active" href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+                <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+                <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+                <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+                <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+				<li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+				<li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+                
+            </ul>
+        </nav><br/>
+    
+    <!-- /* ============================<NAVBAR-END>========================================= */ -->
+	<h1>CSS-BACKGROUND-VIDEO</h1>
+	<div class="bgvideo">
+		<video src="./IMG2/best-falling-snowflakes-best-winter-2021-holiday-motion-background-video.mp4" autoplay loop muted class="fullbgvideo"></video>
+	</div>
+	
+	<h2>PATEL PRATIKKUMAR </h2>
+	<h2>SEM-5</h2>
+	<h2>INFORMATION TECHNOLOGY </h2>
+</body>
+</html>

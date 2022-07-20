@@ -1,0 +1,112 @@
+
+<html>
+	<head>
+		<style type="text/css">
+			.container-img {
+			  position:relative;
+			  width: 300px;
+			}
+
+			.image {
+			  display: block;
+			  width: 300px;
+			  height: 400px;
+			  transition:1s;
+			}
+
+			.overlay {
+			  position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 1s;
+			  background-color:rgba(0,0,0,0.7);
+			}
+
+			.container-img:hover .overlay {
+			  opacity:1;
+			}
+			.container-img:hover .image {
+			  
+			  transform:scale(.7);
+			}
+			.text {
+			  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			  
+			}
+
+			/* header */
+			#navbar{
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+		</style>
+	</head>
+	<body>
+		
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+        <nav id="navbar">
+          
+            <ul>
+                <li><a  href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+                <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+                <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+                <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+                <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+                <li><a class="active" href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+                <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+                <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+				<li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+				<li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+                
+            </ul>
+        </nav><br/>
+    
+    <!-- /* ============================<NAVBAR-END>========================================= */ -->
+		<h2>Image Overlay Effect</h2>
+		<div class="container-img">
+			<img src="IMG2/img1.jpg" alt="Demo Image" class="image">
+			<div class="overlay">
+				<div class="text">OVERLAY</div>
+		    </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <script src="JS/DAY-3-AWT-VANILA-JS.JS"></script>
+    <style>
+      body {
+        background-color: yellow;
+      }
+      #container {
+        background-color: green;
+        height: 200px;
+        width: 200px;
+      }
+      h1{
+        text-align: center;
+        padding:29px;
+      }
+      input,button{
+        font-size: 25px;
+      }
+
+
+      
+button,input{
+    font-weight: bolder;
+    font-size: 27px;
+    text-align: center;
+    justify-content: center;
+    background-color: #1197cc;
+    box-shadow: #094c66 6px 6px 0px;
+    border-radius: 5px;
+    width: 400px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+button:active{
+    transform: translateY(5px) translateX(5px);
+    /* box-shadow: #094c66 0px 0px 0px; */
+    box-shadow: white 0px 0px 0px;
+
+}
+
+input:active{
+    transform: translateY(5px) translateX(5px);
+    /* box-shadow: #094c66 0px 0px 0px; */
+    box-shadow: white 0px 0px 0px;
+
+}
+
+span{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+    </style>
+    <script>
+
+
+
+        function internalalert(){
+            alert("Valid Click");
+        }
+        function internalconfrim()
+          {
+            if(confirm("Are you sure..?")){
+                alert("Yes");
+            }
+            else{
+                alert("Nooo");
+            }
+          }
+          function internalprompt(){
+          var fname=prompt("Enter first name");
+          var lname=prompt("Enter last name");
+          var f1name=prompt("Enter Father's name");
+          var age=prompt("Enter age");
+          var add=prompt("Enter address")
+          alert("Name:"+fname+" "+lname+" "+f1name+"\r\n"+"Age:"+age+"\r\n"+"Address:"+add);
+        }
+
+function bodycolorchange(){
+  document.body.style.backgroundColor="pink";
+}
+function divcolorchange(){
+  document.getElementById("container").style.backgroundColor="blue";
+}
+function bodybyprompt(){
+  document.body.style.backgroundColor=prompt("Enter body color...");
+}
+function divbyprompt(){
+  document.getElementById("container").style.backgroundColor=prompt("Enter div color....");
+}
+function colorpicker(){
+  document.body.style.backgroundColor=document.getElementById("colorPicker").value; 
+}
+function divcolorpicker(){
+  document.getElementById("container").style.backgroundColor=document.getElementById("divcolorpicker").value; 
+}
+function fontcolor(){
+  document.getElementById("H1").style.color=prompt("Enter the font color...");
+}
+function fontcolorbycolorpicker(){
+  document.getElementById("H1").style.color=document.getElementById("fontcolor").value;
+}
+  </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="H1">HELLO AWT</h1>
+    </div>
+    <hr />
+
+    <!-- ---------------------INLINE JS --------------------------- -->
+    <button type="Alert" onclick="alert('Hello I am alert')">
+      inline alert
+    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="confirm" onclick="confirm('Hello I am confirm')">
+      inline confirm
+    </button>&nbsp;&nbsp;&nbsp;
+    <button type="prompt" onclick="prompt('Hello I am Prompt')">
+      inline Prompt
+    </button>
+    <hr />
+
+<!-- ---------------------INTERNAL JS --------------------------- -->
+    <input type="button" value="Internal alert" onclick="internalalert()" />&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Internal confirm" onclick="internalconfrim()" />&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Internal prompt" onclick="internalprompt()" />&nbsp;&nbsp;&nbsp;
+    <hr/>
+
+  <!-- ---------------------EXTERNAL JS --------------------------- -->
+    <input type="button" value="External alert" onclick="externalalert()" />&nbsp;&nbsp;&nbsp;
+    <input type="button" value="External confirm" onclick="externalconfrim()" />&nbsp;&nbsp;&nbsp;
+    <input type="button" value="External prompt" onclick="externalprompt()" />&nbsp;&nbsp;&nbsp;
+    <hr/>
+
+  <!-- ---------------CHANGE COLOR USING ONCLICK EVENT --------------------------- -->
+    <input type="button" value="change body color" onclick="bodycolorchange()">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="change div color" onclick="divcolorchange()">
+    <hr/>
+
+    <!-- ----------------CHANGE COLOR USING PROMT EVENT--------------------------- -->
+    <input type="button" value="Change body color using prompt" onclick="bodybyprompt()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Change div color using prompt" onclick="divbyprompt()">
+    <hr/>
+
+ <!-- ----------------CHANGE COLOR USING COLORPICKER--------------------------- -->
+ <span>COLOR PICKER BODY & DIV : </span>
+    <input type="color" onchange="colorpicker()" id="colorPicker">
+      &nbsp;&nbsp;&nbsp;
+    <input type="color" onchange="divcolorpicker()" id="divcolorpicker">
+    <hr/>
+
+  <!-- -------------CHANGE FONT COLOR USING PROMT EVENT--------------------------- -->
+    <input type="button" value="Change font color using prompt" onclick="fontcolor()">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <span>COLOR PICKER FONT : </span>
+
+    <input type="color" id="fontcolor" onchange="fontcolorbycolorpicker()">
+  </body>
+</html>

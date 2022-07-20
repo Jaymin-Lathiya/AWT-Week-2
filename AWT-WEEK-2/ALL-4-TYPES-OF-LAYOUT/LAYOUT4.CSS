@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.first{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+
+.logo{
+    background-color: darkgrey;
+    width: 30%;
+}
+
+.nav{
+    background-color: darkgrey;
+    width: 68%;
+}
+
+.boxes{
+    display: flex;
+    height: 87px;
+    justify-content: space-between;
+}
+
+.box1 , .box2 , .box3 , .box4{
+    background-color: rgb(99 199 162);
+    width: 24%;
+}
+
+.boxess{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.boxa , .boxb , .boxc{
+    background-color: rgb(99 199 162);
+    width: 32%;
+}
+
+.foot{
+    background-color: darkgrey;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------navbar------- */
+
+#navbar{
+    display: flex;
+    background-color: white;
+    border-bottom: 7px solid red;
+}
+
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bolder;
+    color: yellow;
+    text-shadow: 3.5px 3.5px darkred;
+    width: 50%;
+    padding: 15px;
+    background-color: white;
+}
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+
+
+
+
+
+

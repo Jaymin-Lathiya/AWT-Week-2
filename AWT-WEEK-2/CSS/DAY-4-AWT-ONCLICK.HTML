@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADER & FOOTER</title>
+    <style>
+
+      body{
+        /* background-color: green; */
+        background: rgb(2,0,36);
+      }
+      *{
+        padding: 0;
+        margin: 0;
+      }
+
+      span{
+      
+        font-weight: bolder;
+        font-size: 50px;
+        background-color: white;
+      }
+
+      .container{
+        display: flex;
+        margin: 50px;
+        padding: 10px;
+      }
+
+      img{
+        border-radius: 10px;
+        border: 5px solid black;
+      }
+      .fifth{
+        padding-left: 50px;
+      }
+
+      .first:hover{
+        transform: scale(1.2);
+        box-shadow: 5px 5px white;
+        border: 7px solid yellow;
+        border-radius: 10px;
+      }
+
+      .second:hover{
+        transform: scale(1.2);
+        box-shadow: 5px 5px white;
+        border: 7px solid red;
+        border-radius: 10px;
+      }
+
+      .third:hover{
+        transform: scale(1.2);
+        box-shadow: 5px 5px white;
+        border: 7px solid yellow;
+        border-radius: 10px;
+      }
+
+      /* header */
+      #navbar{
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: green;
+    transition: .5s;
+}
+    </style>
+</head>
+<body>
+  
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+      <nav id="navbar">
+          
+        <ul>
+            <li><a  href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+            <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+            <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+            <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+            <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+            <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+            <li><a class="active" href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+            <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+            <li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+            <li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+            
+        </ul>
+    </nav><br/>
+
+<!-- /* ============================<NAVBAR-END>========================================= */ -->
+
+
+    <main><br>
+     <CEnter> <span>ONCLICK EVENT IMAGE</span></CEnter>
+        <div class="container">
+          <div class="main">
+
+          
+            
+            <div class="first"><img src="IMG2/img1.jpg" height="100px" width="200px" onclick="document.getElementById('four').src='IMG2/img1.jpg'"/></div><br/><br/>
+
+            <div class="second"><img src="IMG2/img2.jpg" alt="" width="200px" height="100px" onclick="document.getElementById('four').src='IMG2/img2.jpg'"/></div><br/><br/>
+
+            <div class="third"><img src="IMG2/img3.jpg" alt="" width="200px" height="100px" onclick="document.getElementById('four').src='IMG2/img3.jpg'"/></div><br/><br/>
+
+          </div>
+
+          <div class="fifth">
+            <img id="four" src="IMG2/img4.jpg" alt="" width="600px" height="400px">
+          </div>
+
+            
+        </div>
+       
+    </main>    
+</body>
+</html>

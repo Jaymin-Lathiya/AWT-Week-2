@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-2</title>
+    <script src="JS/DAY-4-AWT-JS.JS"></script>
+    <style>
+
+        h1{
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        button{
+    font-weight: bolder;
+    font-size: 27px;
+    text-align: center;
+    justify-content: center;
+    background-color: #1197cc;
+    box-shadow: #094c66 6px 6px 0px;
+    border-radius: 5px;
+    width: 150px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+button:active{
+    transform: translateY(5px) translateX(5px);
+    box-shadow: #094c66 0px 0px 0px;
+    
+}
+    </style>
+ 
+  </head>
+  <body>
+    <center><h1>Change Content using button</h1></center>
+    <button onclick="showContent();"> Show Text</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="hideContent();"> Hide Text</button>
+    <p id="text"></p>
+    <button onclick="smallcontent()">Small</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="mediumcontent()">Medium</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="largecontent()">Large</button>
+<hr>
+
+    
+  </body>
+</html>

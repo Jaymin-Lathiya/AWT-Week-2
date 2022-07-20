@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-2</title>
+    <script src="JS/DAY-4-AWT-JS.JS"></script>
+    <style>
+
+        h1{
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        button{
+    font-weight: bolder;
+    font-size: 27px;
+    text-align: center;
+    justify-content: center;
+    background-color: #1197cc;
+    box-shadow: #094c66 6px 6px 0px;
+    border-radius: 5px;
+    width: 150px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+button:active{
+    transform: translateY(5px) translateX(5px);
+    box-shadow: #094c66 0px 0px 0px;
+    
+}
+
+          /* header */
+          #navbar{
+    display: flex;
+    background-color: lightpink;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+    
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+   
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+    </style>
+ 
+  </head>
+  <body>
+
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+      <nav id="navbar">
+          
+        <ul>
+            <li><a  href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+            <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+            <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+            <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+            <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+            <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+            <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+            <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+            <li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+            <li><a class="active" href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+            
+        </ul>
+    </nav><br/>
+
+<!-- /* ============================<NAVBAR-END>========================================= */ -->
+    <center><h1>Change Content using button</h1></center>
+    <button onclick="showContent();"> Show Text</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="hideContent();"> Hide Text</button>
+    <p id="text"></p>
+    <button onclick="smallcontent()">Small</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="mediumcontent()">Medium</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="largecontent()">Large</button>
+<hr>
+
+    
+  </body>
+</html>

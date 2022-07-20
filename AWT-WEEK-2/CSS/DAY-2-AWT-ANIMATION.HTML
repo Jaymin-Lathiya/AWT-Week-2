@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            /* width: 100px;
+            height: 100px; */
+            width: 0;
+	        height: 0;
+	        border-left: 50px solid transparent;
+	        border-right: 50px solid transparent;
+	        border-top: 100px solid yellow;
+            position: relative;
+            animation-name:demo;
+            animation-duration: 5s;
+            transition: all;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes demo{
+            0%{background-color: red; left:0px; top:0px; transform: rotate(0deg);}
+            25%{background-color: black; left: 220px; top:220px; transform:rotate(180deg);}
+            50%{background-color: green; left: 0px; top:300px; transform: rotate(270deg);}
+            75%{background-color: blue; left:0px;top:0px;transform: rotate(360deg);}
+
+        }
+
+        /* header */
+        #navbar{
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+        <nav id="navbar">
+          
+            <ul>
+                <li><a  href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+                <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+                <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+                <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+                <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+                <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+                <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+                <li><a class="active" href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+                <li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+                <li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+                
+            </ul>
+        </nav><br/>
+    
+    <!-- /* ============================<NAVBAR-END>========================================= */ -->
+
+    <h1>Animation</h1>
+    <div></div>
+</body>
+</html>

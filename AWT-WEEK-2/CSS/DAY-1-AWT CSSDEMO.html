@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DEMO</title>
+
+    <style>
+         div
+            {
+                height:200px;
+                width:200px;
+                transition:3s;
+                font-size:25px;
+                font-weight:bold;
+                color:#000000;
+                background-color:blue;
+            }
+
+            .first:hover
+            {
+                        transform:translate(100px,100px);
+                      background-color:yellow;
+                      color:red; 
+            }
+
+            .second:hover
+            {
+                        transform:rotate(360deg);
+                      background-color:green;
+                      color:Yellow; 
+         
+            }
+
+        .third:hover{
+                        transform:rotate3d(1,1,0,360deg);
+                      background-color:pink;
+                      color:blue; 
+         
+			}
+
+            .four:hover{
+                        transform:skew(45deg);
+                      background-color:red;
+                      color:Yellow; 
+            }
+
+            .fifth:hover{
+                        transform:scale(1.5,0.5);
+                      background-color:green;
+                      color:red; 
+            }
+
+            .six:hover{
+                opacity:0.3;
+            }
+
+            .seven:hover{
+                background:rgba(128,128,0,0.5);
+            }
+
+            .eight:hover
+            {
+                box-shadow:0px 0px 100px red;
+            }
+
+            .nine:hover
+            {
+                text-shadow:3px 3px 3px yellow;
+            }
+
+           .ten:hover
+			{
+				border-radius:50%;
+			}
+
+            .eleven{overflow:auto;}
+
+
+            /* header */
+            #navbar{
+                background-color: #a6ffac;
+    display: flex;
+    border-bottom: 7px solid red;
+}
+
+
+nav ul{
+    margin-right: 20px;
+    width: 85%;
+} 
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+    </style>
+</head>
+<body>
+    
+    <!-- /* ============================<NAVBAR-START>========================================= */ -->
+
+        <nav id="navbar">
+          
+            <ul>
+                <li><a class="active" href="DAY-1-AWT CSSDEMO.html">CSS-DEMO</a></li>
+                <li><a  href="DAY-1-AWT-FONTAWESOME.HTML">FONT-AWESOME</a></li>
+                <li><a href="DAY-1-AWT-TYPES-OF-CSS.html">TYPES-OF -CSS</a></li>
+                <li><a  href="DAY-2-AWT BACKGROUND VIDEO.HTML">BGVIDEO</a></li>
+                <li><a  href="DAY-4-AWT-DOUBLEHOVER-WITH-SHADOW.HTML">DOUBLE-HOVER</a></li>
+                <li><a  href="DAY-2-AWT-HOVER.HTML"> LIST HOVER</a></li>
+                <li><a  href="DAY-4-AWT-ONCLICK.HTML">ONCLICK  IMAGE</a></li>
+                <li><a  href="DAY-2-AWT-ANIMATION.HTML">ANIMATION</a></li>
+                <li><a  href="DAY-3-AWT-VANILA-JS.HTML">JS-DEMO</a></li>
+                <li><a  href="DAY-4-AWT-JS.HTML">TEXT-JS</a></li>
+                
+            </ul>
+        </nav><br/>
+    
+    <!-- /* ============================<NAVBAR-END>========================================= */ --><center>
+    <div class="first">Translate</div>         <hr/>
+    <div class="second">Rotate</div>           <hr/>
+    <div class="third">Rotate 3d</div>         <hr/>
+    <div class="four">Skew</div>               <hr/>
+    <div class="fifth">Scale</div>             <hr/>
+    <div class="six">Opacity</div>             <hr/>
+    <div class="seven">RGBA</div>              <hr/>
+    <div class="eight">Box-Shadow</div>        <hr/>
+    <div class="nine">Text-Shadow</div>        <hr/>
+    <div class="ten">Border Radius</div>       <hr/>
+    <div class="eleven">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow </div><hr />
+</center>
+
+</body>
+</html>
