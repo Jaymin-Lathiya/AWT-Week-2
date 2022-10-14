@@ -20,4 +20,10 @@ function externalconfrim()
           alert("Name:"+fname+" "+lname+" "+f1name+"\r\n"+"Age:"+age+"\r\n"+"Address:"+add);
         }
 
+// form validation basic sytax
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
  
